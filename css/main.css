@@ -19,4 +19,9 @@ a {
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
