@@ -24,4 +24,20 @@ a {
 .logo {
   color: white;
   font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header svg {
+  cursor: pointer;
+  margin-top: -0.6em;
+  width: 3em;
+  stroke: white;
+  fill: white;
+}
+
+nav {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

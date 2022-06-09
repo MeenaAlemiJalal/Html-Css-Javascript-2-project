@@ -28,4 +28,23 @@ a {
 }
 
 
+header {
+  display: flex;
+  justify-content: space-between;
+
+  svg{
+    cursor: pointer;
+    margin-top: -.6em;
+    width: 3em;
+    stroke: white;
+    fill: white;
+    
+  }
+}
+
+nav{ 
+  display: none;
+}
+ 
+
 
