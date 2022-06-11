@@ -40,4 +40,16 @@ header svg {
 
 nav {
   display: none;
+}
+
+section.hero {
+  color: white;
+  height: 90vh;
+}
+section.hero svg {
+  stroke: white;
+  fill: white;
+  position: absolute;
+  width: 2em;
+  bottom: 2em;
 }/*# sourceMappingURL=main.css.map */
