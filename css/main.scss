@@ -43,7 +43,34 @@ header {
 }
 
 nav{ 
-  display: none;
+position: fixed;
+right: 0%;
+top: 0%;
+background: white;
+height: 100vh; 
+text-transform: uppercase;
+width: 35%;
+z-index: 999;
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5em;
+
+
+  a {
+    color: black;
+    padding: .8em  2em;
+    display: block;
+    font-size: .7rem;
+    line-height: 2em;
+    
+    &:hover { 
+      background-color: rgb(238, 230, 230);
+    }
+  }
+}
+
 }
  
 section.hero {
@@ -55,9 +82,13 @@ section.hero {
     fill: white;
     position: absolute;
     width: 2em;
-    bottom: 2em;
-   
+    bottom: .5em;
+  }
 
+  h1{
+    font-size: 1.5em;
+    margin-top: 2em;
+    line-height: 1.8rem;
   }
      
     

@@ -39,7 +39,29 @@ header svg {
 }
 
 nav {
-  display: none;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  background: white;
+  height: 100vh;
+  text-transform: uppercase;
+  width: 35%;
+  z-index: 999;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5em;
+}
+nav ul a {
+  color: black;
+  padding: 0.8em 2em;
+  display: block;
+  font-size: 0.7rem;
+  line-height: 2em;
+}
+nav ul a:hover {
+  background-color: rgb(238, 230, 230);
 }
 
 section.hero {
@@ -51,5 +73,10 @@ section.hero svg {
   fill: white;
   position: absolute;
   width: 2em;
-  bottom: 2em;
+  bottom: 0.5em;
+}
+section.hero h1 {
+  font-size: 1.5em;
+  margin-top: 2em;
+  line-height: 1.8rem;
 }/*# sourceMappingURL=main.css.map */
