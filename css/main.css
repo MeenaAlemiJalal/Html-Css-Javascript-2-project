@@ -47,6 +47,7 @@ nav {
   text-transform: uppercase;
   width: 35%;
   z-index: 999;
+  transform: translateX(100%);
 }
 nav ul {
   list-style-type: none;
@@ -63,10 +64,21 @@ nav ul a {
 nav ul a:hover {
   background-color: rgb(238, 230, 230);
 }
+nav .close {
+  stroke: black;
+  margin-top: -4.5em;
+  float: right;
+}
+nav .close path {
+  fill: rgb(173, 169, 169);
+}
 
 section.hero {
   color: white;
   height: 90vh;
+}
+section.hero .subhead {
+  font-size: 0.7em;
 }
 section.hero svg {
   stroke: white;
@@ -79,4 +91,18 @@ section.hero h1 {
   font-size: 1.5em;
   margin-top: 2em;
   line-height: 1.8rem;
+}
+
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 11em;
+}
+.more-info .title {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.more-info .desc {
+  line-height: 1.3rem;
 }/*# sourceMappingURL=main.css.map */
