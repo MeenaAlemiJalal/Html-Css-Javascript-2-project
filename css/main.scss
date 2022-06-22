@@ -170,6 +170,42 @@ section.hero {
 
     }   
   }
+  .hero-img{
+    left: unset;
+    right:0;
+    width: 50%;
+    height: 30em;
+
+  }
+
+  .logo{
+    color: black
+
+    span{
+      color: red;
+    }
+  }
+
+  section.hero{
+    color:black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+   
+
+    h1{
+      font-size: 3.5em;
+      line-height: 3.2rem;
+      margin-top: 1.5em;
+    }
+
+    svg{
+      stroke: black;
+      fill: black;
+ 
+    }
+  }
+
 }
 
 

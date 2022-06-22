@@ -140,4 +140,29 @@ section.hero h1 {
     background: none;
     text-decoration: underline;
   }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 30em;
+  }
+  .logo {
+    color: black span;
+    color-color: red;
+  }
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero h1 {
+    font-size: 3.5em;
+    line-height: 3.2rem;
+    margin-top: 1.5em;
+  }
+  section.hero svg {
+    stroke: black;
+    fill: black;
+  }
 }/*# sourceMappingURL=main.css.map */
