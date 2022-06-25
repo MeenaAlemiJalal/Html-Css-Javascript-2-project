@@ -144,7 +144,7 @@ section.hero h1 {
     left: unset;
     right: 0;
     width: 50%;
-    height: 30em;
+    height: 28.5em;
   }
   .logo {
     color: black span;
@@ -164,5 +164,29 @@ section.hero h1 {
   section.hero svg {
     stroke: black;
     fill: black;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+  .features img {
+    width: 25em;
+  }
+  .features .content {
+    text-align: right;
+    width: 25em;
+  }
+  .features.left {
+    grid-template-areas: "left right";
+  }
+  .features.left img {
+    grid-area: left;
+  }
+  .features.left .content {
+    text-align: right;
+    width: 25em;
+    justify-self: left;
   }
 }/*# sourceMappingURL=main.css.map */
