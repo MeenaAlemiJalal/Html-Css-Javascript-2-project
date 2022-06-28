@@ -19,6 +19,11 @@ a {
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
 }
 
 .logo {
@@ -86,6 +91,7 @@ section.hero svg {
   position: absolute;
   width: 2em;
   bottom: 0.5em;
+  animation: moveArrow 1s alternate-reverse infinite;
 }
 section.hero h1 {
   font-size: 1.5em;
@@ -144,7 +150,7 @@ section.hero h1 {
     left: unset;
     right: 0;
     width: 50%;
-    height: 28.5em;
+    height: 35.5em;
   }
   .logo {
     color: black span;
@@ -154,7 +160,7 @@ section.hero h1 {
     color: black;
     height: auto;
     width: 40%;
-    margin-bottom: 8em;
+    margin-bottom: 18em;
   }
   section.hero h1 {
     font-size: 3.5em;
@@ -164,6 +170,7 @@ section.hero h1 {
   section.hero svg {
     stroke: black;
     fill: black;
+    margin-bottom: -5em;
   }
   .features {
     display: grid;
@@ -188,5 +195,47 @@ section.hero h1 {
     text-align: right;
     width: 25em;
     justify-self: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@-webkit-keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes moveArrow {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }/*# sourceMappingURL=main.css.map */

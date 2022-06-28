@@ -19,6 +19,11 @@ a {
    background-size: cover;
    background-position-x:20% ;
    background-position-y:20% ;
+   width: 100%;
+   height: 100vh;
+   z-index: -1;
+   animation: introLoad 2s forwards;
+
 
 }
 
@@ -98,9 +103,10 @@ section.hero {
     position: absolute;
     width: 2em;
     bottom: .5em;
+    animation: moveArrow 1s alternate-reverse infinite;
   }
 
-  h1{
+  h1{ 
     font-size: 1.5em;
     margin-top: 2em;
     line-height: 1.8rem;
@@ -174,7 +180,7 @@ section.hero {
     left: unset;
     right:0;
     width: 50%;
-    height: 28.5em;
+    height: 35.5em;
 
   }
 
@@ -190,7 +196,7 @@ section.hero {
     color:black;
     height: auto;
     width: 40%;
-    margin-bottom: 8em;
+    margin-bottom: 18em;
    
 
     h1{
@@ -199,9 +205,13 @@ section.hero {
       margin-top: 1.5em;
     }
 
+    
+
     svg{
       stroke: black;
       fill: black;
+      margin-bottom: -5em;
+      
  
     }
   }
@@ -238,6 +248,31 @@ section.hero {
 
   }
 
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+}
+
+@keyframes introLoad {
+  from{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+}
+@keyframes moveArrow {
+  from{
+    transform:translateY(-30px)
+  }
+  to{
+     transform: translateY(0px);
+  }
 }
 
 
