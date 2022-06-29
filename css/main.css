@@ -81,6 +81,9 @@ nav .close path {
 section.hero {
   color: white;
   height: 90vh;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
 }
 section.hero .subhead {
   font-size: 0.7em;
@@ -237,5 +240,23 @@ section.hero h1 {
   }
   to {
     transform: translateY(0px);
+  }
+}
+@-webkit-keyframes moveDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
