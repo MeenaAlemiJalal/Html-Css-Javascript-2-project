@@ -94,17 +94,18 @@ section.hero {
   height: 90vh;
   animation: moveDown 1s ease-in-out forwards;
   opacity: 0;
+  
 
   .subhead{
     font-size: .7em;
    }
 
-  svg {
+  .down-arrow {
     stroke: white;
-    fill: white;
+    fill: black;
     position: absolute;
     width: 2em;
-    bottom: .5em;
+    bottom: 4.5em;
     animation: moveArrow 1s alternate-reverse infinite;
   }
 
@@ -151,6 +152,10 @@ section.hero {
   .menu{
     display: none;
 
+  }
+
+  section.hero .down-arrow {
+    bottom: -7em;
   }
 
   nav{
